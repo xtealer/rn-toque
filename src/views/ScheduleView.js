@@ -67,7 +67,6 @@ const ScheduleView = ({ navigation: { dispatch }, route: { params } }) => {
             </View>
             <View style={styles.footerMessageContainerStyle}>
                 <Text style={styles.footerMessageTextStyle}>LOS DOMINGOS SON PARA LA FAMILIA</Text>
-                <Text style={{ ...styles.footerMessageTextStyle, color: appColors.textDangerPrimary }}>ESTE SABADO 11 #QuedateEnCasa</Text>
             </View>
         </View>
     </SafeViewComponent >);
