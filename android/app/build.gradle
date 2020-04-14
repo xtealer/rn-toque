@@ -105,8 +105,8 @@ android {
         applicationId 'com.novalog.toque'
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 3145735
-        versionName "1.2.5"
+        versionCode 3145736
+        versionName "1.2.6"
     }
     splits {
         abi {

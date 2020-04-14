@@ -22,7 +22,7 @@ const SplashView = ({ navigation }) => {
             </View>
             <View style={styles.footerStyle}>
                 <Text style={styles.footerTextStyle}>by Novatech Logistics</Text>
-                <Text style={styles.footerTextVersion}>v1.2.5</Text>
+                <Text style={styles.footerTextVersion}>v1.2.6</Text>
             </View>
         </View>
     );
