@@ -1,0 +1,33 @@
+{
+  "name": "ToQue",
+  "slug": "toque",
+  "privacy": "public",
+  "platforms": [
+    "ios",
+    "android"
+  ],
+  "version": "1.2.4",
+  "orientation": "portrait",
+  "icon": "./assets/cuapp-logo.png",
+  "splash": {
+    "resizeMode": "contain",
+    "backgroundColor": "#ffffff"
+  },
+  "updates": {
+    "fallbackToCacheTimeout": 0
+  },
+  "assetBundlePatterns": [
+    "**/*"
+  ],
+  "ios": {
+    "supportsTablet": true,
+    "bundleIdentifier": "com.novalog.toque",
+    "buildNumber": "1.2.4"
+  },
+  "android": {
+    "package": "com.novalog.toque",
+    "versionCode": 5
+  },
+  "description": "",
+  "entryPoint": "node_modules/expo/AppEntry.js"
+}
