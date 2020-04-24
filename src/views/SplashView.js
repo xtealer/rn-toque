@@ -21,7 +21,7 @@ const SplashView = ({ navigation }) => {
                 <Image style={styles.logoStyle} source={require("../../assets/toque-logo.png")} />
             </View>
             <View style={styles.footerStyle}>
-                <Text style={styles.footerTextStyle}>by AiUsTk</Text>
+                <Text style={styles.footerTextStyle}>by TekiCode</Text>
                 <Text style={styles.footerTextVersion}>v1.2.7</Text>
             </View>
         </View>
