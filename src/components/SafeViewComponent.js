@@ -4,7 +4,7 @@ import { useSafeArea } from 'react-native-safe-area-context';
 
 const SafeViewComponent = ({ children }) => {
     const insets = useSafeArea();
-    return (<View style={[styles.safeViewStyles, { paddingTop: insets.top }]}>
+    return (<View style={{ ...styles.safeViewStyles, paddingTop: insets.top }}>
         {children}
     </View>);
 };

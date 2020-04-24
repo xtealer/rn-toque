@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         justifyContent: 'center',
         marginTop: 20,
-        padding: 20
+        padding: 15
     },
     btnTextStyle: {
         color: appColors.textSecondary,

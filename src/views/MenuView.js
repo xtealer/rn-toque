@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Linking, Image, View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import SafeViewComponent from '../components/SafeViewComponent';
 import { appColors } from '../styles/GlobalStyles';
 
@@ -10,17 +10,26 @@ const MenuView = ({ navigation }) => {
                 <Text style={styles.logoTextStyle}>ToQue</Text>
                 <Image source={require("../../assets/schedule-calendar.png")} style={styles.logoImageStyle} />
             </View>
-            <View style={styles.btnContainerStyle}>
+            <ScrollView style={styles.btnContainerStyle}>
                 <TouchableOpacity style={styles.btnStyle} onPress={(e) => navigation.navigate('Gender')}>
                     <Text style={styles.btnTextStyle}>CONSULTAR HORARIO</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.btnStyle} onPress={(e) => navigation.navigate('SocialNetworks')}>
-                    <Text style={styles.btnTextStyle}>REDES OFICIALES</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.btnStyle} onPress={(e) => navigation.navigate('Schedule')}>
                     <Text style={styles.btnTextStyle}>ULTIMA CONSULTA</Text>
                 </TouchableOpacity>
-            </View>
+                <TouchableOpacity style={styles.btnStyle} onPress={(e) => Linking.openURL('https://app.toque.cf')}>
+                    <Text style={styles.btnTextStyle}>VERSION WEB</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.btnStyle} onPress={(e) => navigation.navigate('SocialNetworks')}>
+                    <Text style={styles.btnTextStyle}>REDES OFICIALES</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.btnStyle} onPress={(e) => Linking.openURL('https://www.panamatramita.gob.pa/es')}>
+                    <Text style={styles.btnTextStyle}>PANAMA TRAMITA</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{ ...styles.btnStyle, marginBottom: 15 }} onPress={(e) => Linking.openURL('https://www.panamatramita.gob.pa/es')}>
+                    <Text style={styles.btnTextStyle}>SALVOCONDUCTOS</Text>
+                </TouchableOpacity>
+            </ScrollView>
         </View>
     </SafeViewComponent>);
 };
@@ -30,10 +39,11 @@ const styles = StyleSheet.create({
         backgroundColor: appColors.textPrimary,
         borderRadius: 5,
         justifyContent: 'center',
-        marginTop: 20,
-        padding: 20
+        marginTop: 15,
+        padding: 15
     },
     btnContainerStyle: {
+        flex: 1,
         marginHorizontal: 60
     },
     btnTextStyle: {
@@ -41,10 +51,6 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: 'bold',
         textAlign: 'center'
-    },
-    headerContainer: {
-        flexDirection: 'column',
-        marginTop: 60
     },
     parentContainer: {
         backgroundColor: appColors.backgroudSecondary,
@@ -57,7 +63,8 @@ const styles = StyleSheet.create({
         marginVertical: 10
     },
     logoContainerStyle: {
-        alignItems: 'center'
+        alignItems: 'center',
+        marginTop: 60
     },
     logoTextStyle: {
         color: appColors.textPrimary,

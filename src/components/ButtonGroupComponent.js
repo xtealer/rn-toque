@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         backgroundColor: appColors.backgroundPrimary,
         borderRadius: 5,
         flex: 1,
-        padding: 20
+        padding: 15
     },
     btnTextStyle: {
         color: appColors.textSecondary,
